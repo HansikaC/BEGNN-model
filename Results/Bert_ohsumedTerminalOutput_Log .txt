@@ -1,0 +1,31 @@
+Last login: Tue Nov 29 10:07:54 on ttys003
+(base) saisirishavadapalli@Sais-MacBook-Air ~ % cd desktop/BertGNN
+(base) saisirishavadapalli@Sais-MacBook-Air BertGNN % python finetune_bert.py --dataset ohsumed
+1.13.0
+None
+---------------------------------------------------------------
+
+
+
+arguments:
+Namespace(max_length=128, batch_size=128, nb_epochs=60, bert_lr=0.0001, dataset='ohsumed', bert_init='roberta-base', checkpoint_dir=None)
+checkpoints will be saved in ./checkpoint/roberta-base_ohsumed
+(4937, 300) (4937, 8) (2189, 300) (2189, 8) (13173, 300) (13173, 8)
+15362
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaModel: ['lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.dense.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 1  Train acc: 0.9683 loss: 0.0827  Val acc: 0.9563 loss: 0.0772  Test acc: 0.9612 loss: 0.0962
+New checkpoint
+-------------loading results--------------------------------
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 2  Train acc: 0.9740 loss: 0.0542  Val acc: 0.9608 loss: 0.0816  Test acc: 0.9608 loss: 0.1084
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 3  Train acc: 0.9809 loss: 0.0367  Val acc: 0.9626 loss: 0.0880  Test acc: 0.9772 loss: 0.0864
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 4  Train acc: 0.9805 loss: 0.0268  Val acc: 0.9791 loss: 0.0438  Test acc: 0.9799 loss: 0.0802
+New checkpoint
+-------------loading results--------------------------------
+
+

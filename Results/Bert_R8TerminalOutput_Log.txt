@@ -1,0 +1,48 @@
+Last login: Wed Nov 30 14:07:54 on ttys003
+(base) saisirishavadapalli@Sais-MacBook-Air ~ % cd desktop/BertGNN
+(base) saisirishavadapalli@Sais-MacBook-Air BertGNN % python finetune_bert.py --dataset R8
+1.13.0
+None
+---------------------------------------------------------------
+
+
+
+arguments:
+Namespace(max_length=128, batch_size=128, nb_epochs=60, bert_lr=0.0001, dataset='R8', bert_init='roberta-base', checkpoint_dir=None)
+checkpoints will be saved in ./checkpoint/roberta-base_R8
+(4937, 300) (4937, 8) (2189, 300) (2189, 8) (13173, 300) (13173, 8)
+15362
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaModel: ['lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.dense.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 1  Train acc: 0.9822 loss: 0.0574  Val acc: 0.9763 loss: 0.0676  Test acc: 0.9726 loss: 0.0911
+New checkpoint
+-------------loading results--------------------------------
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 2  Train acc: 0.9826 loss: 0.0633  Val acc: 0.9726 loss: 0.0823  Test acc: 0.9698 loss: 0.1118
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 3  Train acc: 0.9757 loss: 0.0734  Val acc: 0.9599 loss: 0.1490  Test acc: 0.9589 loss: 0.1501
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 4  Train acc: 0.9921 loss: 0.0293  Val acc: 0.9854 loss: 0.0441  Test acc: 0.9726 loss: 0.0990
+New checkpoint
+-------------loading results--------------------------------
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 5  Train acc: 0.9866 loss: 0.0484  Val acc: 0.9726 loss: 0.0811  Test acc: 0.9685 loss: 0.1351
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 6  Train acc: 0.9951 loss: 0.0149  Val acc: 0.9745 loss: 0.1053  Test acc: 0.9799 loss: 0.1016
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 7  Train acc: 0.9957 loss: 0.0125  Val acc: 0.9836 loss: 0.0534  Test acc: 0.9781 loss: 0.0964
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 8  Train acc: 0.9939 loss: 0.0217  Val acc: 0.9726 loss: 0.1438  Test acc: 0.9708 loss: 0.1580
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 9  Train acc: 0.9941 loss: 0.0168  Val acc: 0.9781 loss: 0.0638  Test acc: 0.9676 loss: 0.1338
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 10  Train acc: 0.9925 loss: 0.0238  Val acc: 0.9872 loss: 0.0417  Test acc: 0.9767 loss: 0.1171
+New checkpoint
+-------------loading results--------------------------------
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 11  Train acc: 0.9964 loss: 0.0101  Val acc: 0.9836 loss: 0.0551  Test acc: 0.9726 loss: 0.1055
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 12  Train acc: 0.9970 loss: 0.0087  Val acc: 0.9872 loss: 0.0491  Test acc: 0.9744 loss: 0.1143
+

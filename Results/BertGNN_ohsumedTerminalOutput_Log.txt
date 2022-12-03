@@ -1,0 +1,23 @@
+Last login: Tue Nov 29 11:47:06 on ttys000
+(base) saisirishavadapalli@Sais-MacBook-Air ~ % cd desktop
+(base) saisirishavadapalli@Sais-MacBook-Air desktop % cd BertGNN
+(base) saisirishavadapalli@Sais-MacBook-Air BertGNN % python train_bert_plus_gnn.py --dataset  ohsumed -m 0.7
+arguments:
+Namespace(max_length=128, batch_size=64, m=0.7, nb_epochs=50, bert_init='roberta-base', pretrained_bert_ckpt=None, dataset='ohsumed', checkpoint_dir=None, gcn_model='gcn', gcn_layers=2, n_hidden=200, heads=8, dropout=0.5, gcn_lr=0.001, bert_lr=1e-05)
+checkpoints will be saved in ./checkpoint/roberta-base_gcn_ohsumed
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaModel: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+graph information:
+Graph(num_nodes=21557, num_edges=8066963,
+      ndata_schemes={'input_ids': Scheme(shape=(128,), dtype=torch.int64), 'attention_mask': Scheme(shape=(128,), dtype=torch.int64), 'label': Scheme(shape=(), dtype=torch.int64), 'train': Scheme(shape=(), dtype=torch.float32), 'val': Scheme(shape=(), dtype=torch.float32), 'test': Scheme(shape=(), dtype=torch.float32), 'label_train': Scheme(shape=(), dtype=torch.int64), 'cls_feats': Scheme(shape=(768,), dtype=torch.float32)}
+      edata_schemes={'edge_weight': Scheme(shape=(), dtype=torch.float32)})
+
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 1  Train acc: 0.9157 loss: 0.1920  Val acc: 0.9088 loss: 0.2073  Test acc: 0.9392 loss: 0.1580
+New checkpoint
+-------------loading results--------------------------------
+-----------------------------Log-Train Step Done---------------------------------------------------------
+Epoch: 2  Train acc: 0.9698 loss: 0.0821  Val acc: 0.9653 loss: 0.1044 Test acc: 0.9851 loss: 0.0144
+New checkpoint
+-------------loading results--------------------------------
