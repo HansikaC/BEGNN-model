@@ -33,9 +33,9 @@ In this work, we propose BertGCN, a model that combines large scale pretraining 
 | Finetuned Bert | 97.44 | 86.45 | 97.99|
 | BertGNN | 98.17 | 95.56 | 98.51 |
 
-# The output files in the form of *Bert_datasetTerminalOutput_Log .txt* are the outputs of *finetune_bert.py*
+The output files in the form of *Bert_datasetTerminalOutput_Log .txt* are the outputs of *finetune_bert.py*
    example output file *Bert_R8TerminalOutput_Log .txt* --for R8 dataset
-# The output files in the form of *BertGNN_datasetTerminalOutput_Log.txt* are the outputs of *train_bert_plus_gnn.py*
+The output files in the form of *BertGNN_datasetTerminalOutput_Log.txt* are the outputs of *train_bert_plus_gnn.py*
    example output file *Bert_R8TerminalOutput_Log .txt* --for R8dataset
 
 
