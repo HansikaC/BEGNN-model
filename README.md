@@ -66,8 +66,10 @@ Create colab or visual studio environment for running all these files(.py)
 ## Steps:
 1)Run the building_graph.py --dataset for creating the graphs
  for example, consider the R8 dataset *python building_graph.py R8*
+ 
 2)Run *python finetune_bert.py --dataset for getting the features from BERT
   for example, consider the R8 dataset *python finetune_bert.py --dataset R8*
+  
 3)Run *python train_bert_plus_gnn.py --dataset for extracting and aggregating the both features.
   for example, consider R8 dataset *python train_bert_plus_gnn.py --dataset R8  -m 0.7* , where m is the lambda value varies from 0 to 1(for better accuracy, lambda=0.7)
 
